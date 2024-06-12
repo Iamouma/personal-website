@@ -12,7 +12,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     const formData = new FormData(this);
 
     // Send form data to server using fetch
-    fetch("/contact", {
+    fetch("/send-email", {
         method: "POST",
         body: formData
     })

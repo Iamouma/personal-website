@@ -1,8 +1,8 @@
 require('dotenv').config(); // Load environment variables
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -19,7 +19,7 @@ const transporter = nodemailer.createTransport({
 // Serve static files from the 'public' directory
 app.use(express.static(__dirname + '/public'));
 
-app.post('/contact', (req, res) => {
+app.post('/send-email', (req, res) => {
     const { firstName, lastName, email, phone, message } = req.body;
 
     const mailOptions = {

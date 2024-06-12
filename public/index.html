@@ -4,22 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
-    <style>
-        .alert {
-          display: none;
-          color: green;
-          margin-top: 20px;
-        }
-        .message {
-          border: 1px solid #ccc;
-          padding: 10px;
-          margin: 10px 0;
-        }
-    </style>
   </head>
+
   <body>
     <nav id="desktop-nav">
       <div class="logo">Stephen Ouma</div>
@@ -417,31 +407,46 @@
       >
     </section>
     
-
     <div class="container">
-        <h1 class="brand">Contact Me</h1>
-        <div class="wrapper animated bounceInLeft">
-          <div class="company-info">
-            <h3>Get in Touch</h3>
-              <p>
-                Do you have a project or a job for me? Feel free to reach out to discuss
-                or just say hello! I'd love to hear from you.
-              </p>
-          </div>
-          <div class="contact">
-            <form id="contactForm" action="/contact" method="POST">
-                <input type="text" id="firstName" placeholder="First Name" required><br>
-                <input type="text" id="lastName" placeholder="Last Name" required><br>
-                <input type="email" id="email" placeholder="Email" required><br>
-                <input type="text" id="phone" placeholder="Phone"><br>
-                <textarea id="message" placeholder="Message" required></textarea><br>
-                <button type="submit">Submit</button>
-            </form>
-              <div class="alert">Your message has been sent</div>
-              <div id="messages"></div>
-          </div>
+      <h1 class="brand">Contact Me</h1>
+      <div class="wrapper animated bounceInLeft">
+        <div class="company-info">
+          <h3>Get in touch</h3>
+            <p>
+              Do you have a project or a job for me? Feel free to reach out to discuss
+              or just say hello! I'd love to hear from you.
+            </p>
         </div>
+        <div class="contact">
+          <form method="POST" action="/send-email">
+            <p>
+              <label> First Name</label>
+              <input type="text" name="firstName" required>
+            </p>
+            <p>
+              <label>Last Name</label>
+              <input type="text" name="lastName" required>
+            </p>
+            <p>
+              <label>Email Address</label>
+              <input type="email" name="email" required>
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone">
+            </p>
+            <p class="full">
+              <label>Message</label>
+              <textarea name="message" rows="5" required></textarea>
+            </p>
+            <p class="full">
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
     </div>
+    
     
     
       <footer>
@@ -457,20 +462,10 @@
           </div>
         </nav>
         <p>Copyright &#169; 2024 Stephen Ouma. All Rights Reserved.</p>
-      </footer>
-    
-      
-        
-      
-        
-        
-        <!-- Firebase Scripts -->
-        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+      </footer>      
         
         <!-- Your JavaScript -->
-
-    <script src="app.js"></script>
     <script src="script.js"></script>
+
   </body>
 </html>
