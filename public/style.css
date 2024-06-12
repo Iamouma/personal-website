@@ -484,17 +484,16 @@ ul{
   border:1px solid;
 }
 
-.contact form button{
+.contact form button {
   background: black;
   border:0;
   text-transform: uppercase;
+  color: white;
 }
 
-.contact form button:hover,.contact form button{
-  background: black;
-  color: white;
+.contact form button:hover {
+  background:rgb(4, 119, 29);
   outline:0;
-  transition: background-color 2s ease-out;
 }
 
 /* LARGE SCREENS */
