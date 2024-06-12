@@ -417,7 +417,7 @@
             </p>
         </div>
         <div class="contact">
-          <form method="POST" action="/send-email">
+          <form id="contactForm" method="POST" action="/send-email">
             <p>
               <label> First Name</label>
               <input type="text" name="firstName" required>
@@ -441,6 +441,7 @@
             <p class="full">
               <button type="submit">Submit</button>
             </p>
+            <div class="alert" id="alertBox"></div>
           </form>
         </div>
       </div>
