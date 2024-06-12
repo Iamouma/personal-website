@@ -7,6 +7,17 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <style>
+        .alert {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f4f4f4;
+            color: #333;
+            border-radius: 5px;
+            display: none; /* Initially hidden */
+        }
+    </style>
   </head>
 
   <body>
@@ -419,7 +430,7 @@
         <div class="contact">
           <form id="contactForm" method="POST" action="/send-email">
             <p>
-              <label> First Name</label>
+              <label>First Name</label>
               <input type="text" name="firstName" required>
             </p>
             <p>
