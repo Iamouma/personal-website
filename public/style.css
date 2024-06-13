@@ -231,6 +231,7 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  color: white;
 }
 
 .btn-color-2 {
@@ -243,7 +244,7 @@ section {
 
 .btn-color-2:hover {
   background: black;
-  color: white;
+  color: darkcyan;
 }
 
 
