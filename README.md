@@ -31,9 +31,5 @@ This is my personal website project, the website is built using HTML, CSS, and J
     
 2. Open your browser and navigate to http://localhost:3001.
 
-## Contributing
-
-Feel free to fork the project and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
-
 
 
