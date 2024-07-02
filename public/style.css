@@ -342,9 +342,12 @@ section {
   margin-bottom: 1rem;
 }
 
+
+
+  
 /* TECH STACK SECTION */
 
-#experience {
+#techstack {
   position: relative;
 }
 
@@ -359,6 +362,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  transition: all 0.3s ease-in-out;
 }
 
 .article-container {
@@ -368,6 +372,7 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+  transition: all 0.3s ease-in-out;
 }
 
 article {
@@ -376,11 +381,25 @@ article {
   justify-content: space-around;
   gap: 0.5rem;
   color: #003049;
+  transition: all 0.3s ease-in-out;
 }
 
 article .icon {
   cursor: default;
 }
+
+@media (max-width: 768px) {
+  .details-container {
+    flex: 1 1 calc(50% - 20px); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .details-container {
+    flex: 1 1 100%; /* 1 column on small screens */
+  }
+}
+
 
 /* PROJECTS SECTION */
 
