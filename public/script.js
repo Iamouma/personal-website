@@ -48,15 +48,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-function toggleTheme() {
-    const body = document.querySelector("body");
-    const icon = document.getElementById("icon");
-    if (body.className === 'dark') {
-        body.className = 'light'
-        icon.className = 'fa fa-moon-o'
-    }
-    else {
-        body.className = 'dark'
-        icon.className = 'fa fa-sun-o'
-    }
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const serviceItems = document.querySelectorAll('.service-item');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    serviceItems.forEach(item => {
+        observer.observe(item);
+    });
+});
