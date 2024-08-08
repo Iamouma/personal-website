@@ -319,7 +319,7 @@ section {
 }
 
 
-/* General Styles */
+/* SERVICES SECTION */
 #services {
   text-align: center;
   padding: 50px 0;
@@ -338,8 +338,8 @@ section {
 
 /* Service Item Styles */
 .service-item {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: white;
+  border: 1px solid #dad7d7;
   border-radius: 8px;
   padding: 20px;
   width: 300px;
