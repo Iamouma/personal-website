@@ -1,4 +1,4 @@
-/* GENERAL */
+no/* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
@@ -390,7 +390,7 @@ section {
 #services {
   text-align: center;
   padding: 50px 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 /* TECH STACK SECTION */
@@ -401,7 +401,7 @@ section {
 #techstack {
   text-align: center;
   padding: 50px 0;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .experience-sub-title {
