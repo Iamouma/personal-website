@@ -211,14 +211,12 @@ section {
 }
 
 /* ICONS */
-
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
 /* BUTTONS */
-
 .btn-container {
   display: flex;
   justify-content: center;
@@ -258,7 +256,6 @@ section {
 
 
 /* ABOUT SECTION */
-
 #about {
   position: relative;
 }
@@ -398,7 +395,7 @@ section {
 #services {
   text-align: center;
   padding: 50px 0;
-  margin-bottom: 50px; /* Add this line */
+  margin-bottom: 50px;
 }
 
 /* TECH STACK SECTION */
@@ -409,7 +406,7 @@ section {
 #techstack {
   text-align: center;
   padding: 50px 0;
-  margin-top: 50px; /* Add this line */
+  margin-top: 50px;
 }
 
 .experience-sub-title {
@@ -502,8 +499,6 @@ article .icon {
 }
 
 /* CONTACT */
-
-
 *{
   box-sizing: border-box;
 }
@@ -610,7 +605,6 @@ ul{
 
 
 /* FOOTER SECTION */
-
 footer {
   height: 26vh;
   margin: 0 1rem;
