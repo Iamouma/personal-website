@@ -390,7 +390,7 @@ section {
 #services {
   text-align: center;
   padding: 50px 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 /* TECH STACK SECTION */
@@ -398,6 +398,15 @@ section {
   position: relative;
 }
 
+<<<<<<< HEAD
+=======
+#techstack {
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 30px;
+}
+
+>>>>>>> 65b98105f7b78f6c50ec525835c645acda5da8bf
 .experience-sub-title {
   color: black;
   font-weight: 600;
