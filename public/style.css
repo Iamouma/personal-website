@@ -395,6 +395,12 @@ section {
   }
 }
 
+#services {
+  text-align: center;
+  padding: 50px 0;
+  margin-bottom: 50px; /* Add this line */
+}
+
 /* TECH STACK SECTION */
 #techstack {
   position: relative;
